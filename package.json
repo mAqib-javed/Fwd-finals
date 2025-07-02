@@ -1,0 +1,22 @@
+{
+  "name": "student-feedback-tracker",
+  "version": "1.0.0",
+  "description": "A MERN stack application for student feedback tracking",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client"
+  },
+  "keywords": ["mern", "feedback", "student", "tracker", "mongodb", "express", "react", "nodejs"],
+  "author": "Student Feedback Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
